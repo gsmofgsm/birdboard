@@ -32,7 +32,7 @@ class ProjectsTest extends TestCase
         $this->withoutExceptionHandling();
         $project = factory('App\Project')->create();
 
-        $this->get('/projects/' . $project->id)->assertSee($project->title)->assertSee($project->description);
+        $this->get( $project->path() )->assertSee($project->title)->assertSee($project->description);
     }
 
     /** @test */

@@ -4,9 +4,14 @@
     <title></title>
 </head>
 <body>
-    @foreach($projects as $project)
-        <div>{{ $project->title }}</div>
-        <div>{{ $project->description }}</div>
-    @endforeach
+<ul>
+    @forelse($projects as $project)
+        <li>
+            <a href="{{ $project->path() }}">{{ $project->title }}</a>
+        </li>
+    @empty
+        <li>No project yet.</li>
+    @endforelse
+</ul>
 </body>
 </html>
