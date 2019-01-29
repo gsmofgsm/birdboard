@@ -26,10 +26,7 @@ class ProjectController extends Controller
             'description' => 'required',
         ]);
 
-        $validatedRequest['owner_id'] = auth()->id();
-
-        // persist
-        Project::create($validatedRequest);
+        auth()->user()->projects()->create($validatedRequest);
 
         // redirect
         return redirect('/projects');
