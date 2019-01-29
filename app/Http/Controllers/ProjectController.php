@@ -24,8 +24,9 @@ class ProjectController extends Controller
         $validatedRequest = request()->validate([
             'title' => 'required',
             'description' => 'required',
-            'owner_id' => 'required'
         ]);
+
+        $validatedRequest['owner_id'] = auth()->id();
 
         // persist
         Project::create($validatedRequest);

@@ -50,10 +50,9 @@ class ProjectsTest extends TestCase
     }
 
     /** @test */
-    public function a_project_requires_a_owner()
+    public function only_authenticated_user_can_create_a_project()
     {
-//        $this->withoutExceptionHandling();
-        $attributes = factory('App\Project')->raw(['owner_id' => null]);
-        $this->post('/projects', $attributes)->assertSessionHasErrors('owner_id');
+        $attributes = factory('App\Project')->raw();
+        $this->post('/projects', $attributes)->assertRedirect('login');
     }
 }
