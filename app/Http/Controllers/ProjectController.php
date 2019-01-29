@@ -23,7 +23,8 @@ class ProjectController extends Controller
         // validate
         $validatedRequest = request()->validate([
             'title' => 'required',
-            'description' => 'required'
+            'description' => 'required',
+            'owner_id' => 'required'
         ]);
 
         // persist
