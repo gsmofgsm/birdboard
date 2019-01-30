@@ -24,10 +24,20 @@ class ManageProjectsTest extends TestCase
     }
 
     /** @test */
+    public function guests_cannot_see_create_project_page()
+    {
+        $this->get('/projects/create')->assertRedirect('login');
+    }
+
+    /** @test */
     public function a_user_can_create_a_project()
     {
+        $this->withoutExceptionHandling();
+
         $this->actingAs(factory('App\User')->create());
-        
+
+        $this->get('/projects/create')->assertOk();
+
         $attributes = [
             'title' => $this->faker->sentence,
             'description' => $this->faker->sentence,
