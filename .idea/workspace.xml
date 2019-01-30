@@ -391,13 +391,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.ProjectsTest">
-    <configuration name="ProjectsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ProjectsTest" file="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" scope="Class" />
+  <component name="RunManager" selected="PHPUnit.ManageProjectsTest">
+    <configuration name="ManageProjectsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ManageProjectsTest" file="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="ProjectsTest.a_user_can_create_a_project" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ProjectsTest" file="$PROJECT_DIR$/tests/Feature/ProjectsTest.php" method="a_user_can_create_a_project" scope="Method" />
+    <configuration name="ManageProjectsTest.a_user_can_create_a_project" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ManageProjectsTest" file="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" method="a_user_can_create_a_project" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -406,8 +406,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.ProjectsTest" />
-        <item itemvalue="PHPUnit.ProjectsTest.a_user_can_create_a_project" />
+        <item itemvalue="PHPUnit.ManageProjectsTest" />
+        <item itemvalue="PHPUnit.ManageProjectsTest.a_user_can_create_a_project" />
       </list>
     </recent_temporary>
   </component>
