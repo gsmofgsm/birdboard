@@ -60,6 +60,17 @@ class ProjectsTest extends TestCase
     }
 
     /** @test */
+    public function a_user_can_list_their_projects_but_not_projects_of_others()
+    {
+        $this->be(factory('App\User')->create());
+
+        $project_of_his = factory('App\Project')->create(['owner_id' => auth()->id()]);
+        $project_not_his = factory('App\Project')->create();
+
+        $this->get('projects')->assertSee($project_of_his->title)->assertDontSee($project_not_his->title);
+    }
+
+    /** @test */
     public function a_project_requires_a_title()
     {
         $this->actingAs(factory('App\User')->create());
