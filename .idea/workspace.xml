@@ -62,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/projects/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="14" column="87" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
+            <state relative-caret-position="81">
+              <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
               <folding>
                 <element signature="e#305#327#0#HTML" expanded="true" />
               </folding>
@@ -211,10 +211,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="648" />
+    <option name="x" value="398" />
     <option name="y" value="122" />
-    <option name="width" value="779" />
-    <option name="height" value="507" />
+    <option name="width" value="1029" />
+    <option name="height" value="707" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -417,7 +417,7 @@
       <updated>1548699034816</updated>
       <workItem from="1548699039150" duration="18996000" />
       <workItem from="1548923766438" duration="1107000" />
-      <workItem from="1548928063022" duration="7540000" />
+      <workItem from="1548928063022" duration="7737000" />
     </task>
     <servers />
   </component>
@@ -454,10 +454,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27643000" />
+    <option name="totallyTimeSpent" value="27840000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="648" y="122" width="779" height="507" extended-state="0" />
+    <frame x="398" y="122" width="1029" height="707" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.39077342" />
@@ -777,8 +777,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/projects/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="87" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
+        <state relative-caret-position="81">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
           <folding>
             <element signature="e#305#327#0#HTML" expanded="true" />
           </folding>
