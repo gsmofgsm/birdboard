@@ -29,12 +29,7 @@
             </div>
 
             <div class="lg:w-1/4 px-3">
-                <div class="card">
-                    <h1>{{ $project->title }}</h1>
-                    <p>{{ $project->description }}</p>
-
-                    <a href="/projects">Go back</a>
-                </div>
+                @include('projects.card')
             </div>
         </div>
     </main>
