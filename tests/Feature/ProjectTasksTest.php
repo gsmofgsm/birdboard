@@ -35,7 +35,7 @@ class ProjectTasksTest extends TestCase
 //        $project = factory('App\Project')->create(['owner_id' => auth()->id()]);
         $task = $project->addTask('test task');
 //        $this->signIn();
-        $this->patch($project->path() . '/tasks/' . $task->id, ['body' => 'updated'])->assertForbidden();
+        $this->patch($task->path(), ['body' => 'updated'])->assertForbidden();
         $this->assertDatabaseHas('tasks', ['body' => 'test task']);
         $this->assertDatabaseMissing('tasks', ['body' => 'updated']);
     }
