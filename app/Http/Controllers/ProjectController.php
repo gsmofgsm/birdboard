@@ -35,9 +35,9 @@ class ProjectController extends Controller
             'description' => 'required',
         ]);
 
-        auth()->user()->projects()->create($validatedRequest);
+        $project = auth()->user()->projects()->create($validatedRequest);
 
         // redirect
-        return redirect('/projects');
+        return redirect($project->path());
     }
 }
