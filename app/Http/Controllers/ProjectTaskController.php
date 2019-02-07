@@ -25,7 +25,7 @@ class ProjectTaskController extends Controller
 
     public function update(Project $project, Task $task)
     {
-        if($project->owner->isNot(auth()->user())){
+        if($task->project->owner->isNot(auth()->user())){
             abort(403);
         }
 

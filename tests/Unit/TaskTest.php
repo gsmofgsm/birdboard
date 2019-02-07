@@ -22,6 +22,6 @@ class TaskTest extends TestCase
     public function a_task_has_a_path()
     {
         $task = factory('App\Task')->create();
-        $this->assertEquals($task->project->path() . '/tasks/' . $task->id, $task->path());
+        $this->assertEquals('/tasks/' . $task->id, $task->path());
     }
 }
