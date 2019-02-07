@@ -41,4 +41,19 @@ class ProjectController extends Controller
         // redirect
         return redirect($project->path());
     }
+
+    public function update(Project $project)
+    {
+        if($project->owner->isNot(auth()->user())){
+            abort(403);
+        }
+
+        $validatedRequest = request()->validate([
+            'notes' => 'max:255'
+        ]);
+
+        $project->update($validatedRequest);
+        // redirect
+        return redirect($project->path());
+    }
 }

@@ -57,6 +57,30 @@ class ManageProjectsTest extends TestCase
     }
 
     /** @test */
+    public function a_user_can_update_a_project()
+    {
+        $this->signIn();
+
+        $project = factory('App\Project')->create(['owner_id' => auth()->id()]);
+
+        $notes = ['notes' => 'Changed.'];
+        $this->patch($project->path(), $notes);
+        $this->assertDatabaseHas('projects', $notes);
+        $this->get($project->path())->assertSee($notes['notes']);
+    }
+
+    /** @test */
+    public function a_user_can_not_update_a_project_of_others()
+    {
+        $this->signIn();
+
+        $project = factory('App\Project')->create();
+
+        $notes = ['notes' => 'Changed.'];
+        $this->patch($project->path(), $notes)->assertForbidden();
+    }
+
+    /** @test */
     public function a_user_can_view_their_projects()
     {
         $this->signIn();
