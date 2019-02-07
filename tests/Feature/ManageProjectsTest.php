@@ -34,7 +34,6 @@ class ManageProjectsTest extends TestCase
     public function a_user_can_create_a_project()
     {
         $this->withoutExceptionHandling();
-
         $this->signIn();
 
         $this->get('/projects/create')->assertOk();
@@ -42,6 +41,7 @@ class ManageProjectsTest extends TestCase
         $attributes = [
             'title' => $this->faker->sentence,
             'description' => $this->faker->sentence,
+            'notes' => 'General notes here.'
         ];
 
         $response = $this->post('/projects', $attributes);
@@ -50,7 +50,10 @@ class ManageProjectsTest extends TestCase
 
         $this->assertDatabaseHas('projects', $attributes);
 
-        $this->get('/projects')->assertSee($attributes['title']);
+        $this->get($project->path())
+            ->assertSee($attributes['title'])
+            ->assertSee($attributes['description'])
+            ->assertSee($attributes['notes']);
     }
 
     /** @test */

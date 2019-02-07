@@ -33,6 +33,7 @@ class ProjectController extends Controller
         $validatedRequest = request()->validate([
             'title' => 'required',
             'description' => 'required',
+            'notes' => 'max:255'
         ]);
 
         $project = auth()->user()->projects()->create($validatedRequest);
