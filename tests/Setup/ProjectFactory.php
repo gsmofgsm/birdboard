@@ -27,7 +27,7 @@ class ProjectFactory
     public function create()
     {
         $project = factory(Project::class)->create([
-            'owner_id' => $this->owner ? $this->owner->id : factory(User::class)
+            'owner_id' => $this->owner ?? factory(User::class)
         ]);
 
         factory(Task::class, $this->taskCount)->create([
