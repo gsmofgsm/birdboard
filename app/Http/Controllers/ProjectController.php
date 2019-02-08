@@ -45,6 +45,8 @@ class ProjectController extends Controller
         $this->authorize('update', $project);
 
         $validatedRequest = request()->validate([
+            'title' => 'required',
+            'description' => 'required',
             'notes' => 'max:255'
         ]);
 

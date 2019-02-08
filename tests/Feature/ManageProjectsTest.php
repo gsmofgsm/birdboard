@@ -63,10 +63,10 @@ class ManageProjectsTest extends TestCase
 
         $project = factory('App\Project')->create(['owner_id' => auth()->id()]);
 
-        $notes = ['notes' => 'Changed.'];
-        $this->patch($project->path(), $notes);
-        $this->assertDatabaseHas('projects', $notes);
-        $this->get($project->path())->assertSee($notes['notes']);
+        $updates = ['title' => 'Changed', 'description' => 'Changed', 'notes' => 'Changed.'];
+        $this->patch($project->path(), $updates);
+        $this->assertDatabaseHas('projects', $updates);
+        $this->get($project->path())->assertSee($updates['notes']);
     }
 
     /** @test */
