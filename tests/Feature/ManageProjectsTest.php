@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Project;
+use Facades\Tests\Setup\ProjectFactory;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -62,6 +63,8 @@ class ManageProjectsTest extends TestCase
         $this->signIn();
 
         $project = factory('App\Project')->create(['owner_id' => auth()->id()]);
+
+        $this->get($project->path() . '/edit')->assertOk();
 
         $updates = ['title' => 'Changed', 'description' => 'Changed', 'notes' => 'Changed.'];
         $this->patch($project->path(), $updates);
@@ -132,5 +135,12 @@ class ManageProjectsTest extends TestCase
     {
         $attributes = factory('App\Project')->raw();
         $this->post('/projects', $attributes)->assertRedirect('login');
+    }
+
+    /** @test */
+    public function guests_cannot_goto_edit_project_page()
+    {
+        $project = ProjectFactory::create();
+        $this->get($project->path() . '/edit')->assertRedirect('login');
     }
 }
