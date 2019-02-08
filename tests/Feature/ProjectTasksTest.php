@@ -57,9 +57,7 @@ class ProjectTasksTest extends TestCase
     public function a_task_be_updated()
     {
         $this->withoutExceptionHandling();
-        $project = app(ProjectFactory::class)->withTasks(1)->create();
-
-        $this->signIn($project->owner);
+        $project = app(ProjectFactory::class)->ownedBy($this->signIn())->withTasks(1)->create();
 
         $attribute = [
             'body' => 'changed',
