@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use Tests\Setup\ProjectFactory;
+use Facades\Tests\Setup\ProjectFactory;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -57,7 +57,7 @@ class ProjectTasksTest extends TestCase
     public function a_task_be_updated()
     {
         $this->withoutExceptionHandling();
-        $project = app(ProjectFactory::class)->ownedBy($this->signIn())->withTasks(1)->create();
+        $project = ProjectFactory::ownedBy($this->signIn())->withTasks(1)->create();
 
         $attribute = [
             'body' => 'changed',
