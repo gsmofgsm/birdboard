@@ -27,6 +27,6 @@ class ProjectUpdateRequest extends ProjectRequest
      */
     public function project()
     {
-        return Project::findOrFail($this->route('project'));
+        return Project::findOrFail($this->project);
     }
 }
