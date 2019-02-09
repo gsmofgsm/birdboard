@@ -60,6 +60,7 @@ class ManageProjectsTest extends TestCase
     /** @test */
     public function a_user_can_update_a_project()
     {
+        $this->withoutExceptionHandling();
         $this->signIn();
 
         $project = factory('App\Project')->create(['owner_id' => auth()->id()]);
