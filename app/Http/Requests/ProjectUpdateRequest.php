@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Project;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Gate;
 
@@ -37,10 +38,10 @@ class ProjectUpdateRequest extends FormRequest
     }
 
     /**
-     * @return \Illuminate\Routing\Route|object|string
+     * @return Project
      */
     public function project()
     {
-        return $this->route('project');
+        return Project::findOrFail($this->route('project'));
     }
 }

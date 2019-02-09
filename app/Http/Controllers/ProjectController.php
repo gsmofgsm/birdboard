@@ -42,7 +42,7 @@ class ProjectController extends Controller
         return view('projects.edit', compact('project'));
     }
 
-    public function update(ProjectUpdateRequest $form, Project $project)
+    public function update(ProjectUpdateRequest $form)
     {
         return redirect($form->save()->path());
     }
