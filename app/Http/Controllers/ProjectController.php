@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ProjectCreateRequest;
 use App\Http\Requests\ProjectUpdateRequest;
 use App\Project;
 use Illuminate\Http\Request;
@@ -26,7 +27,7 @@ class ProjectController extends Controller
         return view('projects.create');
     }
 
-    public function store(ProjectUpdateRequest $form)
+    public function store(ProjectCreateRequest $form)
     {
         return redirect($form->save()->path());
     }
