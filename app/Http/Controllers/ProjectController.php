@@ -44,9 +44,7 @@ class ProjectController extends Controller
 
     public function update(ProjectUpdateRequest $form, Project $project)
     {
-        $form->save();
-        // redirect
-        return redirect($project->path());
+        return redirect($form->save()->path());
     }
 
     /**
