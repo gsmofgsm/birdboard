@@ -48,8 +48,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/projects/_form.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+            <state relative-caret-position="394">
+              <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProjectController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+              <folding>
+                <element signature="e#40#56#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -449,7 +461,7 @@
       <updated>1548699034816</updated>
       <workItem from="1548699039150" duration="18996000" />
       <workItem from="1548923766438" duration="1107000" />
-      <workItem from="1548928063022" duration="29315000" />
+      <workItem from="1548928063022" duration="29787000" />
     </task>
     <servers />
   </component>
@@ -486,7 +498,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49418000" />
+    <option name="totallyTimeSpent" value="49890000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="110" y="89" width="1359" height="776" extended-state="0" />
@@ -852,16 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProjectController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -886,6 +888,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProjectController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/projects/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -895,8 +907,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/projects/_form.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        <state relative-caret-position="394">
+          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
         </state>
       </provider>
     </entry>
