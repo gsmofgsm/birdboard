@@ -44,8 +44,6 @@ class ProjectController extends Controller
 
     public function update(ProjectUpdateRequest $request, Project $project)
     {
-        $this->authorize('update', $project);
-
         $project->update($request->validated());
         // redirect
         return redirect($project->path());
