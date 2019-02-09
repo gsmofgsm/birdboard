@@ -26,13 +26,9 @@ class ProjectController extends Controller
         return view('projects.create');
     }
 
-    public function store()
+    public function store(ProjectUpdateRequest $form)
     {
-        // validate
-        $project = auth()->user()->projects()->create($this->validateRequest());
-
-        // redirect
-        return redirect($project->path());
+        return redirect($form->save()->path());
     }
 
     public function edit(Project $project)
