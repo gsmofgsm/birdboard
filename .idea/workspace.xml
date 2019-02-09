@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06bb96a3-5915-4ddf-ab25-47556375b6f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/projects/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/projects/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/show.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,11 +57,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/projects/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="243">
               <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/projects/show.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -117,7 +122,6 @@
         <option value="$PROJECT_DIR$/app/Task.php" />
         <option value="$PROJECT_DIR$/tests/Unit/TaskTest.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_01_28_183350_create_projects_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/projects/show.blade.php" />
         <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Policies/ProjectsPolicy.php" />
         <option value="$PROJECT_DIR$/app/Policies/ProjectPolicy.php" />
@@ -130,6 +134,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" />
         <option value="$PROJECT_DIR$/resources/views/projects/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/projects/show.blade.php" />
       </list>
     </option>
   </component>
@@ -464,7 +469,7 @@
       <updated>1548699034816</updated>
       <workItem from="1548699039150" duration="18996000" />
       <workItem from="1548923766438" duration="1107000" />
-      <workItem from="1548928063022" duration="27949000" />
+      <workItem from="1548928063022" duration="28472000" />
     </task>
     <servers />
   </component>
@@ -501,7 +506,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48052000" />
+    <option name="totallyTimeSpent" value="48575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="670" y="89" width="799" height="776" extended-state="0" />
@@ -777,16 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/projects/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
-          <folding>
-            <element signature="e#1989#2015#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_28_183350_create_projects_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -911,6 +906,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/projects/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
         </state>
       </provider>
     </entry>
