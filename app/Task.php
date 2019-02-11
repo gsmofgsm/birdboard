@@ -15,20 +15,14 @@ class Task extends Model
         parent::boot();
 
         static::created(function($task){
-            Activity::create([
-                'project_id' => $task->project->id,
-                'description' => 'task_created'
-            ]);
+            $task->project->registerActivity('task_created');
         });
 
         static::updated(function($task){
             if(! $task->completed){
                 return;
             }
-            Activity::create([
-                'project_id' => $task->project->id,
-                'description' => 'task_completed'
-            ]);
+            $task->project->registerActivity('task_completed');
         });
     }
 
