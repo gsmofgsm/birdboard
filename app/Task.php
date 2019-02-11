@@ -21,13 +21,6 @@ class Task extends Model
         static::created(function($task){
             $task->project->registerActivity('task_created');
         });
-
-        static::updated(function($task){
-            if(! $task->completed){
-                return;
-            }
-            $task->project->registerActivity('task_completed');
-        });
     }
 
     public function project()
@@ -42,6 +35,7 @@ class Task extends Model
 
     public function complete()
     {
-        return $this->update(['completed' => true]);
+        $this->update(['completed' => true]);
+        $this->project->registerActivity('task_completed');
     }
 }
