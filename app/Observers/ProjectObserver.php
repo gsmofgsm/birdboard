@@ -14,7 +14,7 @@ class ProjectObserver
      */
     public function created(Project $project)
     {
-        $this->registerActivity('created', $project);
+        $project->registerActivity('created' );
     }
 
     /**
@@ -25,15 +25,7 @@ class ProjectObserver
      */
     public function updated(Project $project)
     {
-        $this->registerActivity('updated', $project);
-    }
-
-    protected function registerActivity($type, Project $project)
-    {
-        \App\Activity::create([
-            'project_id' => $project->id,
-            'description' => $type
-        ]);
+        $project->registerActivity('updated' );
     }
 
     /**
