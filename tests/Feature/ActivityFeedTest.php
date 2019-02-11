@@ -38,7 +38,7 @@ class ActivityFeedTest extends TestCase
         $project->addTask('new task');
 
         $this->assertCount(2, $project->activity);
-        $this->assertEquals('task_created', $project->activity()->latest('id')->first()->description);
+        $this->assertEquals('task_created', $project->activity->last()->description);
     }
 
     /** @test */
@@ -50,6 +50,6 @@ class ActivityFeedTest extends TestCase
             ->patch($project->tasks()->first()->path(), ['body' => 'maybe updated', 'completed' => true]);
 
         $this->assertCount(3, $project->activity);
-        $this->assertEquals('task_completed', $project->activity()->latest('id')->first()->description);
+        $this->assertEquals('task_completed', $project->activity->last()->description);
     }
 }
