@@ -29,8 +29,10 @@ class ProjectTaskController extends Controller
             'body' => 'required'
         ]));
 
-        if(request()->has('completed')){
+        if(request('completed')){
             $task->complete();
+        }else{
+            $task->incomplete();
         }
 
         return redirect($task->project->path());
