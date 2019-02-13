@@ -8,12 +8,12 @@ use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class ActivityFeedTest extends TestCase
+class TriggerProjectActivityTest extends TestCase
 {
     use RefreshDatabase;
 
     /** @test */
-    public function creating_a_project_records_activity()
+    public function creating_a_project()
     {
         $project = ProjectFactory::create();
 
@@ -22,7 +22,7 @@ class ActivityFeedTest extends TestCase
     }
 
     /** @test */
-    public function updating_a_project_records_activity()
+    public function updating_a_project()
     {
         $project = ProjectFactory::create();
         $project->update(['title' => 'Changed']);
@@ -31,7 +31,7 @@ class ActivityFeedTest extends TestCase
     }
 
     /** @test */
-    public function creating_a_new_task_records_project_activity()
+    public function creating_a_new_task()
     {
         /** @var Project $project */
         $project = ProjectFactory::create();
@@ -42,7 +42,7 @@ class ActivityFeedTest extends TestCase
     }
 
     /** @test */
-    public function completing_a_task_records_project_activity()
+    public function completing_a_task()
     {
         /** @var Project $project */
         $project = ProjectFactory::withTasks(1)->create();
