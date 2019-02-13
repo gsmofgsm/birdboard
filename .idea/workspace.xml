@@ -49,20 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Task.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+            <state relative-caret-position="344">
+              <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Feature/TriggerProjectActivityTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="69" column="36" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
+            <state relative-caret-position="391">
+              <caret line="78" column="50" lean-forward="true" selection-start-line="78" selection-start-column="50" selection-end-line="78" selection-end-column="50" />
               <folding>
                 <element signature="e#33#49#0#PHP" expanded="true" />
               </folding>
@@ -140,8 +140,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProjectTaskController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/ActivityFeedTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/RecordProjectActivityTest.php" />
-        <option value="$PROJECT_DIR$/app/Task.php" />
         <option value="$PROJECT_DIR$/tests/Feature/TriggerProjectActivityTest.php" />
+        <option value="$PROJECT_DIR$/app/Task.php" />
       </list>
     </option>
   </component>
@@ -498,7 +498,7 @@
       <workItem from="1548699039150" duration="18996000" />
       <workItem from="1548923766438" duration="1107000" />
       <workItem from="1548928063022" duration="37119000" />
-      <workItem from="1549763532561" duration="5134000" />
+      <workItem from="1549763532561" duration="5318000" />
     </task>
     <servers />
   </component>
@@ -535,7 +535,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62356000" />
+    <option name="totallyTimeSpent" value="62540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="494" y="30" width="962" height="800" extended-state="0" />
@@ -943,20 +943,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Task.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/TriggerProjectActivityTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="69" column="36" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
+        <state relative-caret-position="391">
+          <caret line="78" column="50" lean-forward="true" selection-start-line="78" selection-start-column="50" selection-end-line="78" selection-end-column="50" />
           <folding>
             <element signature="e#33#49#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Task.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
         </state>
       </provider>
     </entry>

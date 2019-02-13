@@ -69,4 +69,14 @@ class TriggerProjectActivityTest extends TestCase
         $this->assertCount(4, $project->activity);
         $this->assertEquals('task_incompleted', $project->activity->last()->description);
     }
+
+    /** @test */
+    public function deleting_a_task()
+    {
+        /** @var Project $project */
+        $project = ProjectFactory::withTasks(1)->create();
+        $project->tasks[0]->delete();
+        $this->assertCount(3, $project->activity);
+        $this->assertEquals('task_deleted', $project->activity->last()->description);
+    }
 }
