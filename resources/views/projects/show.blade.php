@@ -67,7 +67,7 @@
                     <ul class="text-xs list-reset">
                         @foreach( $project->activity as $activity )
                             <li class="{{ $loop->last ? '' : 'mb-1' }}">
-                                {{ $activity->description }}
+                                @include( "projects.activity.{$activity->description}" )
                             </li>
                         @endforeach
                     </ul>
