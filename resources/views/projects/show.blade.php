@@ -63,6 +63,13 @@
 
             <div class="lg:w-1/4 px-3 pt-8">
                 @include('projects.card')
+                <div class="card mt-3">
+                    <ul>
+                        @foreach( $project->activity as $activity )
+                            <li>{{ $activity->description }}</li>
+                        @endforeach
+                    </ul>
+                </div>
             </div>
         </div>
     </main>
