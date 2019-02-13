@@ -52,4 +52,21 @@ class TriggerProjectActivityTest extends TestCase
         $this->assertCount(3, $project->activity);
         $this->assertEquals('task_completed', $project->activity->last()->description);
     }
+
+    /** @test */
+    public function incompleting_a_task()
+    {
+        /** @var Project $project */
+        $project = ProjectFactory::withTasks(1)->create();
+        $this->actingAs($project->owner)
+            ->patch($project->tasks()->first()->path(), ['body' => 'maybe updated', 'completed' => true]);
+
+        $this->assertCount(3, $project->activity);
+
+        $this->patch($project->tasks()->first()->path(), ['body' => 'maybe updated', 'completed' => false]);
+
+        $project->refresh();
+        $this->assertCount(4, $project->activity);
+        $this->assertEquals('task_incompleted', $project->activity->last()->description);
+    }
 }
