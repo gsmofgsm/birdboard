@@ -64,9 +64,11 @@
             <div class="lg:w-1/4 px-3 pt-8">
                 @include('projects.card')
                 <div class="card mt-3">
-                    <ul>
+                    <ul class="text-xs list-reset">
                         @foreach( $project->activity as $activity )
-                            <li>{{ $activity->description }}</li>
+                            <li class="{{ $loop->last ? '' : 'mb-1' }}">
+                                {{ $activity->description }}
+                            </li>
                         @endforeach
                     </ul>
                 </div>
