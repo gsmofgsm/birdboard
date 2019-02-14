@@ -27,12 +27,23 @@ class Task extends Model
     public function complete()
     {
         $this->update(['completed' => true]);
-        $this->project->registerActivity('task_completed');
+        $this->registerActivity('task_completed');
     }
 
     public function incomplete()
     {
         $this->update(['completed' => false]);
-        $this->project->registerActivity('task_incompleted');
+        $this->registerActivity('task_incompleted');
+    }
+
+    public function activity()
+    {
+        return $this->morphMany(Activity::class, 'subject')->latest();
+    }
+
+    public function registerActivity($description)
+    {
+        $project_id = $this->project->id;
+        $this->activity()->create(compact('project_id', 'description'));
     }
 }
