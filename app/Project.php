@@ -35,13 +35,13 @@ class Project extends Model
 
     public function registerActivity($description)
     {
-        $changes = $this->activityChanges($description);
+        $changes = $this->activityChanges();
         $this->activity()->create(compact('description', 'changes'));
     }
 
-    protected function activityChanges($description)
+    protected function activityChanges()
     {
-        if($description === 'updated'){
+        if($this->wasChanged()){
             $old = $this->getOriginal();
             $new = $this->toArray();
 
