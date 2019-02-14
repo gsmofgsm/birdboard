@@ -43,6 +43,7 @@ class TriggerProjectActivityTest extends TestCase
         tap($project->activity->last(), function($activity) {
             $this->assertEquals('task_created', $activity->description);
             $this->assertInstanceOf(Task::class, $activity->subject);
+            $this->assertEquals('new task', $activity->subject->body);
         });
     }
 
