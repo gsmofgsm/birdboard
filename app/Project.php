@@ -35,12 +35,20 @@ class Project extends Model
 
     public function registerActivity($description)
     {
-        $old = $this->getOriginal();
-        $new = $this->toArray();
-        $changes = [
-            'before' => array_diff($old, $new),
-            'after' => array_diff($new, $old),
-        ];
+        $changes = $this->activityChanges($description);
         $this->activity()->create(compact('description', 'changes'));
+    }
+
+    protected function activityChanges($description)
+    {
+        if($description === 'updated'){
+            $old = $this->getOriginal();
+            $new = $this->toArray();
+
+            return $changes = [
+                'before' => array_except(array_diff($old, $new), 'updated_at'),
+                'after' => array_except(array_diff($new, $old), 'updated_at'),
+            ];
+        }
     }
 }
