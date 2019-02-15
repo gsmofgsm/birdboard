@@ -25,7 +25,7 @@ trait RecordsActivity
 
     public function eventDescription($event)
     {
-        return class_basename($this) === 'Project' ? $event : strtolower(class_basename($this)) . '_' . $event;
+        return strtolower(class_basename($this)) . '_' . $event;
     }
 
     public function registerActivity($description)
