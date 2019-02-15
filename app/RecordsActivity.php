@@ -7,8 +7,7 @@ trait RecordsActivity
     {
         foreach(self::recordableEvents() as $event) {
             static::$event(function($model) use ($event) {
-                $event_description = class_basename($model) === 'Project' ? $event : strtolower(class_basename($model)) . '_' . $event;
-                $model->registerActivity($event_description);
+                $model->registerActivity($model->eventDescription($event));
             });
         }
     }
@@ -22,6 +21,11 @@ trait RecordsActivity
             return static::$recordableEvents;
         }
         return ['created', 'updated', 'deleted'];
+    }
+
+    public function eventDescription($event)
+    {
+        return class_basename($this) === 'Project' ? $event : strtolower(class_basename($this)) . '_' . $event;
     }
 
     public function registerActivity($description)
