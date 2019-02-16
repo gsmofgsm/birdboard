@@ -31,8 +31,10 @@ trait RecordsActivity
     public function registerActivity($description)
     {
         $changes = $this->activityChanges();
-        $project_id = class_basename($this) === 'Project' ? $this->id : $this->project->id;
-        $this->activity()->create(compact('description', 'project_id', 'changes'));
+        $project = $this->project ?? $this;
+        $project_id = $project->id;
+        $user_id = $project->owner->id;
+        $this->activity()->create(compact('description', 'user_id', 'project_id', 'changes'));
     }
 
     public function activity()
