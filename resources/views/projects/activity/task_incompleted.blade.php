@@ -1,1 +1,1 @@
-You incompleted task "{{ $activity->subject->body }}".
+{{ $activity->user->name }} incompleted task "{{ $activity->subject->body }}".
