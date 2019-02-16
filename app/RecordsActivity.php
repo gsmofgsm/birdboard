@@ -46,7 +46,7 @@ trait RecordsActivity
     {
         if ($this->wasChanged()) {
             $old = $this->getOriginal();
-            $new = $this->toArray();
+            $new = $this->getAttributes();
 
             return $changes = [
                 'before' => array_except(array_diff($old, $new), 'updated_at'),
