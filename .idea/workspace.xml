@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06bb96a3-5915-4ddf-ab25-47556375b6f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ProjectUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ProjectUpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/RecordsActivity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/RecordsActivity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/projects/card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/card.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,13 +24,43 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
+            <state relative-caret-position="216">
+              <caret line="66" column="27" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
               <folding>
                 <element signature="e#33#49#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/projects/activity/card.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/projects/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/projects/card.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="6" column="77" selection-start-line="6" selection-start-column="77" selection-end-line="6" selection-end-column="77" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,7 +133,6 @@
         <option value="$PROJECT_DIR$/tailwind.js" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/projects/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/projects/card.blade.php" />
         <option value="$PROJECT_DIR$/tests/Unit/ProjectTest.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_06_195524_create_tasks_table.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
@@ -151,6 +176,7 @@
         <option value="$PROJECT_DIR$/app/Http/Requests/ProjectUpdateRequest.php" />
         <option value="$PROJECT_DIR$/app/RecordsActivity.php" />
         <option value="$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php" />
+        <option value="$PROJECT_DIR$/resources/views/projects/card.blade.php" />
       </list>
     </option>
   </component>
@@ -248,9 +274,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="728" />
+    <option name="x" value="539" />
     <option name="y" value="239" />
-    <option name="width" value="676" />
+    <option name="width" value="865" />
     <option name="height" value="580" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -393,14 +419,6 @@
             <path>
               <item name="birdboard" type="b2602c69:ProjectViewProjectNode" />
               <item name="birdboard" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="activity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="birdboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="birdboard" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -511,7 +529,7 @@
       <workItem from="1548923766438" duration="1107000" />
       <workItem from="1548928063022" duration="37119000" />
       <workItem from="1549763532561" duration="12046000" />
-      <workItem from="1550308137716" duration="4788000" />
+      <workItem from="1550308137716" duration="5257000" />
     </task>
     <servers />
   </component>
@@ -548,13 +566,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78605000" />
+    <option name="totallyTimeSpent" value="79074000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="728" y="239" width="676" height="580" extended-state="0" />
+    <frame x="539" y="239" width="865" height="580" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3280757" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.32806805" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -590,14 +608,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1013" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/TelescopeServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -891,13 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/projects/activity/card.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/projects/activity/project_created.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -946,12 +949,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/projects/activity/card.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/projects/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/ManageProjectsTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
+        <state relative-caret-position="216">
+          <caret line="66" column="27" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
           <folding>
             <element signature="e#33#49#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/projects/card.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="77" selection-start-line="6" selection-start-column="77" selection-end-line="6" selection-end-column="77" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
