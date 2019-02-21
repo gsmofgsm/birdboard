@@ -22,6 +22,11 @@ class ProjectUpdateRequest extends ProjectRequest
         return tap($this->project())->update($this->validated());
     }
 
+    public function delete()
+    {
+        $this->project()->delete();
+    }
+
     /**
      * @return Project
      */

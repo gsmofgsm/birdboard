@@ -44,6 +44,12 @@ class ProjectController extends Controller
         return redirect($form->save()->path());
     }
 
+    public function destroy(ProjectUpdateRequest $form)
+    {
+        $form->delete();
+        return redirect('/projects');
+    }
+
     /**
      * @return mixed
      */
